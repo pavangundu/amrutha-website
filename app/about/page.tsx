@@ -19,36 +19,6 @@ const expertiseCards = [
   { icon: '🏋️', title: 'Fitness & Sports Nutrition', desc: 'Performance-optimized nutrition plans for athletes and active individuals — fueling training, accelerating recovery, and building sustainable strength.' },
 ]
 
-const timeline = [
-  {
-    year: '2025',
-    degree: 'MSc Nutrition & Dietetics',
-    institution: 'JSS Academy of Higher Education & Research, Mysuru',
-    score: 'GPA: 8.8/10',
-    color: 'bg-primary',
-  },
-  {
-    year: '2023',
-    degree: 'BSc Food Science Nutrition & Dietetics',
-    institution: 'Loyola Academy, Osmania University, Hyderabad',
-    score: 'GPA: 8.84/10',
-    color: 'bg-teal',
-  },
-  {
-    year: '2020',
-    degree: 'Intermediate (12th)',
-    institution: 'Sri Chaitanya Junior College, Hyderabad',
-    score: '88.8%',
-    color: 'bg-primary',
-  },
-  {
-    year: '2018',
-    degree: 'Secondary (10th)',
-    institution: 'DVP Public School Kukatpally, Hyderabad',
-    score: '85.66%',
-    color: 'bg-teal',
-  },
-]
 
 const experience = [
   {
