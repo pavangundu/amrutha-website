@@ -2,26 +2,85 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: var(--font-dmsans), sans-serif;
+    color: #4A4A6A;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  h1, h2, h3 {
+    color: #1A1A2E;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary-dark transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary text-primary px-6 py-3 rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .section-title {
+    @apply font-playfair text-2xl sm:text-3xl md:text-4xl font-bold text-dark-text leading-tight;
+  }
+
+  .section-subtitle {
+    @apply text-body-text text-base md:text-lg leading-relaxed;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl p-6 border border-pink-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-2 bg-pink-100 text-primary text-sm font-semibold px-4 py-1.5 rounded-full;
+  }
+
+  .skill-tag {
+    @apply inline-block bg-pink-50 text-primary border border-pink-200 text-sm font-medium px-4 py-2 rounded-full;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF0F7;
+}
+::-webkit-scrollbar-thumb {
+  background: #E91E8C;
+  border-radius: 3px;
+}
+
+/* Floating animation for decorative elements */
+.float-1 { animation: float 6s ease-in-out infinite; }
+.float-2 { animation: float 8s ease-in-out infinite 1s; }
+.float-3 { animation: float 7s ease-in-out infinite 2s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(5deg); }
+}
+
+/* Timeline styles */
+.timeline-line {
+  @apply absolute left-4 top-0 bottom-0 w-0.5 bg-pink-200;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #E91E8C, #00B4A6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
