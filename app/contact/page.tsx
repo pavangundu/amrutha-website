@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import toast from 'react-hot-toast'
 import emailjs from '@emailjs/browser'
+import Image from 'next/image'
 
 const contactMethods = [
   {
@@ -229,11 +230,8 @@ export default function ContactPage() {
               </p>
 
               {/* Image placeholder */}
-              <div className="w-full h-60 md:h-72 rounded-3xl bg-gradient-to-br from-pink-200 to-blush border-2 border-pink-200 flex items-center justify-center shadow-lg mb-6 overflow-hidden">
-                <div className="text-center text-primary/40">
-                  <div className="text-7xl mb-2">👩‍⚕️</div>
-                  <p className="text-sm font-medium text-primary/60">Amrutha Gelli</p>
-                </div>
+              <div className="relative w-full h-80 md:h-[350px] rounded-3xl border-2 border-pink-200 flex items-center justify-center shadow-lg mb-6 overflow-hidden">
+                <Image src="/profeesional4.png" alt="Amrutha Gelli" fill className="object-cover object-[50%_45%]" />
               </div>
 
               <div className="space-y-3">

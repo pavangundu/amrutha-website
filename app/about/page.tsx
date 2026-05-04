@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'About Amrutha Gelli | Clinical Dietitian — AIG Hospitals Hyderabad',
@@ -105,11 +106,8 @@ export default function AboutPage() {
               <Link href="/contact" className="btn-primary">Book a Consultation</Link>
             </div>
             <div className="flex justify-center">
-              <div className="w-72 h-72 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-pink-200 to-blush border-4 border-primary/30 flex items-center justify-center shadow-2xl shadow-pink-200/50">
-                <div className="text-center text-primary/50">
-                  <div className="text-8xl mb-2">👩‍⚕️</div>
-                  <p className="text-sm font-medium text-primary/70">Amrutha Gelli</p>
-                </div>
+              <div className="w-72 h-72 md:w-80 md:h-80 rounded-full border-4 border-primary/30 flex items-center justify-center shadow-2xl shadow-pink-200/50 relative overflow-hidden">
+                <Image src="/profeesional2.jpeg" alt="Amrutha Gelli" fill className="object-cover object-center" />
               </div>
             </div>
           </div>
@@ -120,12 +118,8 @@ export default function AboutPage() {
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div className="w-full h-80 md:h-[500px] rounded-3xl bg-gradient-to-br from-pink-100 to-blush border-2 border-pink-200 flex items-center justify-center overflow-hidden shadow-xl">
-              <div className="text-center text-primary/40">
-                <div className="text-8xl mb-2">👩‍🔬</div>
-                <p className="text-sm font-medium text-primary/60">Clinical Dietitian</p>
-                <p className="text-xs text-primary/40">AIG Hospitals, Hyderabad</p>
-              </div>
+            <div className="relative w-full h-80 md:h-[500px] rounded-3xl border-2 border-pink-200 flex items-center justify-center overflow-hidden shadow-xl">
+              <Image src="/profeesional3.png" alt="Clinical Dietitian" fill className="object-cover object-[50%_45%]" />
             </div>
             <div>
               <span className="badge mb-4 w-fit">BIOGRAPHY</span>

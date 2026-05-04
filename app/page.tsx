@@ -124,12 +124,8 @@ export default function HomePage() {
               <div className="absolute inset-0 rounded-full border-4 border-primary/20 scale-110" />
               <div className="absolute inset-0 rounded-full border-4 border-primary/10 scale-125" />
               {/* Profile circle — smaller on mobile */}
-              <div className="w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-pink-200 to-pink-50 border-4 border-primary/30 flex items-center justify-center overflow-hidden shadow-2xl shadow-pink-200/50">
-                <div className="text-center text-primary/50">
-                  <div className="text-6xl sm:text-8xl mb-2">👩‍⚕️</div>
-                  <p className="text-xs sm:text-sm font-medium text-primary/70">Amrutha Gelli</p>
-                  <p className="text-xs text-primary/50">Clinical Dietitian</p>
-                </div>
+              <div className="w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-4 border-primary/30 flex items-center justify-center overflow-hidden shadow-2xl shadow-pink-200/50 relative">
+                <Image src="/profeesional1.jpeg" alt="Amrutha Gelli" fill className="object-cover object-center" />
               </div>
               {/* Floating badges — compact on mobile */}
               <div className="absolute -bottom-3 -left-2 sm:-bottom-4 sm:-left-4 bg-white rounded-xl sm:rounded-2xl px-3 sm:px-4 py-2 sm:py-3 shadow-lg border border-pink-100">
