@@ -118,8 +118,8 @@ export default function AboutPage() {
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div className="relative w-full h-80 md:h-[500px] rounded-3xl border-2 border-pink-200 flex items-center justify-center overflow-hidden shadow-xl">
-              <Image src="/profeesional3.png" alt="Clinical Dietitian" fill className="object-cover object-[50%_45%]" />
+            <div className="relative w-full h-96 md:h-[600px] rounded-3xl border-2 border-pink-200 flex items-center justify-center overflow-hidden shadow-xl">
+              <Image src="/profeesional3.png" alt="Clinical Dietitian" fill className="object-cover object-[50%_40%]" />
             </div>
             <div>
               <span className="badge mb-4 w-fit">BIOGRAPHY</span>

@@ -230,8 +230,8 @@ export default function ContactPage() {
               </p>
 
               {/* Image placeholder */}
-              <div className="relative w-full h-80 md:h-[350px] rounded-3xl border-2 border-pink-200 flex items-center justify-center shadow-lg mb-6 overflow-hidden">
-                <Image src="/profeesional4.png" alt="Amrutha Gelli" fill className="object-cover object-[50%_45%]" />
+              <div className="relative w-full h-[460px] md:h-[500px] rounded-3xl border-2 border-pink-200 flex items-center justify-center shadow-lg mb-6 overflow-hidden">
+                <Image src="/profeesional4.png" alt="Amrutha Gelli" fill className="object-cover object-[50%_30%]" />
               </div>
 
               <div className="space-y-3">
